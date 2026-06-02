@@ -5,10 +5,10 @@
 /* ---- Typing Animation ---- */
 const typingTexts = [
   'hello_world();',
-  'const me = "JM Genite";',
-  'IT_Student.init();',
-  'buildFuture();',
-  'learnCode.run();',
+  'const me = "Nichole Pancho";',
+  'IS_Student.init();',
+  'designFuture();',
+  'buildSolutions.run();',
 ];
 let typeIdx = 0, charIdx = 0, isDeleting = false;
 const typedEl = document.getElementById('typedText');
@@ -239,10 +239,10 @@ if (profileImg) {
       font-family:'Outfit',sans-serif; border:4px solid #00d4ff;
       box-shadow: 0 0 40px rgba(0,212,255,0.4);
     `;
-    placeholder.textContent = 'JM';
+    placeholder.textContent = 'NP';
     container.appendChild(placeholder);
   };
 }
 
-console.log('%c⚡ John Mark B. Genite Portfolio', 'color:#00d4ff;font-size:18px;font-weight:bold;');
-console.log('%cIT Student | Web Developer | DNSC', 'color:#7c3aed;font-size:12px;');
+console.log('%c⚡ Nichole Pancho Portfolio', 'color:#00d4ff;font-size:18px;font-weight:bold;');
+console.log('%cIS Student | Digital Designer | DNSC', 'color:#7c3aed;font-size:12px;');

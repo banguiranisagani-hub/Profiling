@@ -645,6 +645,12 @@ section {
 .java-icon { background: rgba(231, 111, 0, 0.12); color: #e76f00; }
 .db-icon { background: rgba(0, 212, 255, 0.12); color: var(--accent); }
 .ui-icon { background: rgba(124, 58, 237, 0.12); color: var(--accent-2); }
+/* Nichole skill icons */
+.photo-icon { background: rgba(255, 99, 132, 0.12); color: #ff6384; }
+.canva-icon { background: rgba(0, 196, 204, 0.12); color: #00c4cc; }
+.pres-icon { background: rgba(255, 159, 64, 0.12); color: #ff9f40; }
+.web-icon { background: rgba(0, 212, 255, 0.12); color: var(--accent); }
+.doc-icon { background: rgba(54, 162, 235, 0.12); color: #36a2eb; }
 
 .skill-card h3 {
   font-size: 1rem;
@@ -722,6 +728,9 @@ section {
   grid-template-columns: repeat(2, 1fr);
   gap: 28px;
 }
+.projects-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
 
 .project-card { padding: 32px; }
 .project-header {
@@ -740,6 +749,10 @@ section {
 }
 .inventory-icon { background: rgba(0,212,255,0.12); color: var(--accent); }
 .ecom-icon { background: rgba(124,58,237,0.12); color: var(--accent-2); }
+/* Nichole project icons */
+.recap-icon { background: rgba(6,255,165,0.12); color: var(--accent-3); }
+.portfolio-icon { background: rgba(124,58,237,0.12); color: var(--accent-2); }
+.academic-icon { background: rgba(255,159,64,0.12); color: #ff9f40; }
 
 .project-badge {
   font-family: var(--font-code);
@@ -869,6 +882,40 @@ section {
 }
 .interest-item i { color: var(--accent); }
 
+/* Goals Card */
+.goals-card {
+  margin-top: 32px;
+  padding: 32px 36px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  background: linear-gradient(135deg, rgba(0,212,255,0.06), rgba(124,58,237,0.06));
+  border-color: rgba(0,212,255,0.25);
+}
+.goals-icon {
+  width: 60px; height: 60px;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, rgba(6,255,165,0.15), rgba(0,212,255,0.15));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: var(--accent-3);
+  flex-shrink: 0;
+}
+.goals-text h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--text-primary);
+}
+.goals-text p {
+  color: var(--text-secondary);
+  line-height: 1.75;
+  font-size: 0.97rem;
+}
+.goals-text p strong { color: var(--accent); }
+
 /* =====================================================
    CONTACT SECTION
    ===================================================== */
@@ -923,6 +970,9 @@ section {
 .github-icon { background: rgba(255,255,255,0.08); color: #fff; }
 .fb-icon { background: rgba(66,103,178,0.15); color: #4267b2; }
 .loc-icon { background: rgba(0,212,255,0.12); color: var(--accent); }
+.school-icon { background: rgba(6,255,165,0.12); color: var(--accent-3); }
+.prog-icon { background: rgba(124,58,237,0.15); color: var(--accent-2); }
+.strand-icon { background: rgba(255,159,64,0.12); color: #ff9f40; }
 
 .contact-link-label {
   display: block;
@@ -1058,9 +1108,11 @@ section {
   .hero-tagline { justify-content: center; }
 
   .skills-grid { grid-template-columns: repeat(2, 1fr); }
+  .projects-grid-3 { grid-template-columns: repeat(2, 1fr); }
   .achievements-grid { grid-template-columns: repeat(2, 1fr); }
   .contact-grid { grid-template-columns: 1fr; }
   .about-grid { grid-template-columns: 1fr; }
+  .goals-card { flex-direction: column; text-align: center; }
 }
 
 @media (max-width: 768px) {
@@ -1078,7 +1130,7 @@ section {
   .fb-js { left: -10px; }
   .fb-java { right: -10px; }
 
-  .projects-grid { grid-template-columns: 1fr; }
+  .projects-grid, .projects-grid-3 { grid-template-columns: 1fr; }
   .skills-grid { grid-template-columns: 1fr; }
   .achievements-grid { grid-template-columns: 1fr; }
 
